@@ -1,0 +1,7 @@
+# Avoid accidental file uploads
+*.sketch
+*.fig
+*.xd
+
+.DS_Store
+.prettierignore
