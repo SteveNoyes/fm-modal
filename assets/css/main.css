@@ -16,6 +16,12 @@ Desktop: 1440px
   --dark-charcoal: hsl(24, 5%, 18%);
 }
 
+.secondary_header {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 body {
   background-color: var(--eggshell);
   font-size: 16px;
