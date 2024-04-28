@@ -16,34 +16,9 @@ Desktop: 1440px
   --dark-charcoal: hsl(24, 5%, 18%);
 }
 
-.secondary_header {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
 
-body {
-  background-color: var(--eggshell);
-  font-size: 16px;
-  /* font-family: 'Young Serif'; */
-  font-family: 'Outfit Regular';
-}
 
-.recipe-card {
-  width: 60%;
-  background-color: var(--white);
-  margin: 0 auto;
-  border-radius: 10px;
-}
 
-.card-content-wrapper {
-  padding: 25px;
-}
-
-.omelette-image {
-  width: 100%;
-  border-radius: 10px;
-}
 
 /* 
 Family: Young Serif
@@ -52,3 +27,35 @@ Weights: 400
 Family: Outfit
 Weights: 400, 600, 700 
 */
+
+@media screen and (min-width: 1400px) {
+
+  .secondary_header {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: var(--eggshell);
+    font-size: 16px;
+    /* font-family: 'Young Serif'; */
+    font-family: 'Outfit Regular';
+  }
+  
+  .recipe-card {
+    width: 60%;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .card-content-wrapper {
+    padding: 25px;
+  }
+  
+  .omelette-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
