@@ -1,24 +1,92 @@
-/* 
-Break points
-Mobile: 375px
-Desktop: 1440px 
-*/
-
-:root {
-  --bg-color: #ffffff;
-  --bg-secondary-color: #f3f3f6;
-  --color-primary: #14854F;
-  --color-lightGrey: #d2d6dd;
-  --color-grey: #747681;
-  --color-darkGrey: #3f4144;
-  --color-error: #d43939;
-  --color-success: #28bd14;
-  --grid-maxWidth: 120rem;
-  --grid-gutter: 2rem;
-  --font-size: 1.6rem;
-  --font-color: #333333;
-  --font-family-sans: sans-serif;
-  --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+@font-face {
+  font-family: 'Outfit Bold';
+  src: url('../fonts/Outfit-Bold.woff2') format('woff2'),
+      url('../fonts/Outfit-Bold.woff') format('woff'),
+      url('../fonts/Outfit-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Extra Bold';
+  src: url('../fonts/Outfit-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Outfit-ExtraBold.woff') format('woff'),
+      url('../fonts/Outfit-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Black';
+  src: url('../fonts/Outfit-Black.woff2') format('woff2'),
+      url('../fonts/Outfit-Black.woff') format('woff'),
+      url('../fonts/Outfit-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Light';
+  src: url('../fonts/Outfit-Light.woff2') format('woff2'),
+      url('../fonts/Outfit-Light.woff') format('woff'),
+      url('../fonts/Outfit-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Medium';
+  src: url('../fonts/Outfit-Medium.woff2') format('woff2'),
+      url('../fonts/Outfit-Medium.woff') format('woff'),
+      url('../fonts/Outfit-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Semi Bold';
+  src: url('../fonts/Outfit-SemiBold.woff2') format('woff2'),
+      url('../fonts/Outfit-SemiBold.woff') format('woff'),
+      url('../fonts/Outfit-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Extra Light';
+  src: url('../fonts/Outfit-ExtraLight.woff2') format('woff2'),
+      url('../fonts/Outfit-ExtraLight.woff') format('woff'),
+      url('../fonts/Outfit-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Regular';
+  src: url('../fonts/Outfit-Regular.woff2') format('woff2'),
+      url('../fonts/Outfit-Regular.woff') format('woff'),
+      url('../fonts/Outfit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit Thin';
+  src: url('../fonts/Outfit-Thin.woff2') format('woff2'),
+      url('../fonts/Outfit-Thin.woff') format('woff'),
+      url('../fonts/Outfit-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../fonts/YoungSerif-Regular.woff2') format('woff2'),
+      url('../fonts/YoungSerif-Regular.woff') format('woff'),
+      url('../fonts/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -34,20 +102,132 @@ Desktop: 1440px
   --dark-charcoal: hsl(24, 5%, 18%);
 }
 
+body {
+  font-size: 20px; 
+  font-family: 'Young Serif' !important;
+  line-height: 1.4;
+}
 
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--nutmeg);
+  padding-bottom: 20px;
+}
 
+h3 {
+  font-family: 'Outfit Regular', serif, monospace;
+  font-weight: bold;
+  font-size: 25px;
+}
 
+hr {
+  color: var(--dark-charcoal);
+  margin: 20px 0;
+}
 
-/* 
-Family: Young Serif
-Weights: 400
+.info-wrapper {
+  padding: 50px;
+}
 
-Family: Outfit
-Weights: 400, 600, 700 
-*/
+.info-wrapper h1 {
+  font-family: 'Outfit Extra Bold', serif, monospace;
+  font-weight: 700;
+  font-size: 60px;
+  padding-bottom: 40px;
+}
 
+.omelette-image {
+  width: 100%;
+  border-radius: 0 !important;
+}
 
+.prep-time {
+  border-radius:  15px;
+  padding: 20px;
+  background-color: var(--rose-white);
+  margin: 30px 0;
+}
 
+.prep-time h3 {
+  color: var(--dark-raspberry);
+  padding-bottom: 10px;
+}
+
+.prep-time ul {
+  padding-left: 20px;
+  line-height: 2.2;
+}
+
+.prep-time .bulllet-point {
+  color: var(--dark-raspberry);
+}
+
+.prep-time ul li span {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.ingredients {
+  line-height: 2;
+}
+
+.ingredients .bulllet-point {
+  padding-right: 40px;
+}
+
+.instructions ol li {
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.instructions ol {
+  list-style: decimal; 
+  counter-reset: li;
+  padding-left: 25px;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: var(--nutmeg);
+}
+
+.instructions ol li p {
+  padding-left: 15px;
+  color: var(--dark-charcoal); 
+  font-weight: normal !important;
+}
+
+.instructions ol li p span {
+  font-weight: bold !important;
+}
+
+.nutrition {
+  padding-top: 20px;
+}
+
+.nutrition table {
+  width: 100%;
+  line-height: 2;
+}
+
+.nutrition table tr {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition table tr:nth-last-child(1) {
+  border-bottom: none !important;
+}
+
+.nutrition table tr td:nth-child(1) {
+  padding-left: 40px;
+  color: var(--dark-charcoal);
+}
+
+.nutrition table tr td:nth-child(2) {
+  color: var(--nutmeg);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Outfit Extra Bold' !important;
+}
 
 @media screen and (min-width: 1400px) {
 
@@ -60,7 +240,6 @@ Weights: 400, 600, 700
   body {
     background-color: var(--eggshell);
     font-size: 16px;
-    /* font-family: 'Young Serif'; */
     font-family: 'Outfit Regular';
   }
   
@@ -77,6 +256,6 @@ Weights: 400, 600, 700
   
   .omelette-image {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px !important;
   }
 }
